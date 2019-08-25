@@ -1,0 +1,11 @@
+http://www.userk.co.uk/arduino-bluetooth-linux/
+
+hcitool scan
+
+sudo rfcomm bind 0 CC:50:E3:A1:42:D6 1
+sudo rfcomm release 0
+
+rfcomm
+bluetooth-agent 1234 CC:50:E3:A1:42:D6
+
+sudo rfcomm connect 0 CC:50:E3:A1:42:D6
